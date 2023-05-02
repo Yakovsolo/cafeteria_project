@@ -73,13 +73,13 @@ if __name__ == "__main__":
 
     number_of_guests = int(input("Please enter the number of guests: \n"))
 
-    person = TableReservation(
+    reservation = TableReservation(
         name=name,
         surname=surname,
         number_of_guests=number_of_guests,
     )
-    guest = person.check_reservation()
+    guest = reservation.check_reservation()
     if guest == False:
-        person.get_reservation()
+        reservation.get_reservation()
 
-    person.print_info_of_reservation()
+    reservation.print_info_of_reservation()
